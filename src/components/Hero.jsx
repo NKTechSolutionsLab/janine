@@ -9,11 +9,11 @@ function Hero() {
       id="home"
       className="
         relative
-        min-h-[900px]
+        min-h-[535px]
         overflow-hidden
         bg-[#ead9c4]
 
-        sm:min-h-[930px]
+        sm:min-h-[575px]
 
         md:min-h-[700px]
         md:pt-[78px]
@@ -98,13 +98,13 @@ function Hero() {
             absolute
             inset-x-0
             bottom-0
-            h-[330px]
+            h-[150px]
             bg-gradient-to-t
             from-[#ead9c4]
-            via-[#ead9c4]/75
+            via-[#ead9c4]/60
             to-transparent
 
-            sm:h-[300px]
+            sm:h-[160px]
 
             md:h-[180px]
 
@@ -116,32 +116,23 @@ function Hero() {
       {/* =========================================================
           JANINE HERO IMAGE
 
-          MOBILE:
-          - Centered
-          - Pulled upward closer to CTA
-          
-          DESKTOP:
-          - Original positioning preserved
+          MOBILE: HIDDEN
+          TABLET+: VISIBLE
       ========================================================= */}
 
       <div
         className="
-          pointer-events-none
-          absolute
-          bottom-0
-          left-1/2
-          z-[5]
-          h-[500px]
-          w-full
-          -translate-x-1/2
-          overflow-hidden
+          hidden
 
-          sm:h-[530px]
-
+          md:pointer-events-none
+          md:absolute
+          md:bottom-0
           md:left-0
+          md:z-[5]
+          md:block
           md:h-[500px]
           md:w-[52%]
-          md:translate-x-0
+          md:overflow-hidden
 
           lg:inset-y-0
           lg:h-auto
@@ -154,19 +145,12 @@ function Hero() {
           className="
             absolute
             bottom-0
-            left-1/2
+            left-[-5%]
             h-auto
-            w-[330px]
+            w-[115%]
             max-w-none
-            -translate-x-1/2
             object-contain
             object-bottom
-
-            sm:w-[365px]
-
-            md:left-[-5%]
-            md:w-[115%]
-            md:translate-x-0
 
             lg:bottom-0
             lg:left-[-3%]
@@ -175,7 +159,7 @@ function Hero() {
           "
         />
 
-        {/* Desktop image blend */}
+        {/* Image right-side blend */}
         <div
           className="
             absolute
@@ -197,15 +181,11 @@ function Hero() {
             absolute
             inset-x-0
             bottom-0
-            h-[24%]
+            h-[20%]
             bg-gradient-to-t
             from-[#ead9c4]
             via-[#ead9c4]/50
             to-transparent
-
-            sm:h-[22%]
-
-            md:h-[20%]
 
             lg:h-[18%]
           "
@@ -221,10 +201,10 @@ function Hero() {
           relative
           z-20
           mx-auto
-          min-h-[900px]
+          min-h-[535px]
           max-w-[1600px]
 
-          sm:min-h-[930px]
+          sm:min-h-[575px]
 
           md:min-h-[622px]
 
@@ -234,13 +214,13 @@ function Hero() {
         <div
           className="
             flex
-            min-h-[900px]
+            min-h-[535px]
             w-full
             items-start
             px-5
             pt-12
 
-            sm:min-h-[930px]
+            sm:min-h-[575px]
             sm:px-8
             sm:pt-14
 
@@ -485,7 +465,6 @@ function Hero() {
 
             {/* =================================================
                 DESKTOP QUOTE
-                ORIGINAL DESKTOP LAYOUT
             ================================================= */}
 
             <div
@@ -618,19 +597,20 @@ function Hero() {
 
       {/* =========================================================
           MOBILE QUOTE
-          BOTTOM RIGHT
+
+          KEPT CLOSE TO THE CTA
       ========================================================= */}
 
       <div
         className="
           absolute
-          bottom-[38px]
+          bottom-[28px]
           right-4
           z-30
           w-[185px]
           text-right
 
-          sm:bottom-[45px]
+          sm:bottom-[32px]
           sm:right-6
           sm:w-[220px]
 
@@ -642,7 +622,7 @@ function Hero() {
             font-serif
             text-[14px]
             italic
-            leading-[1.25]
+            leading-[1.22]
             text-[#28211c]
 
             sm:text-[16px]
@@ -657,7 +637,7 @@ function Hero() {
 
         <div
           className="
-            mt-3
+            mt-2
             flex
             items-center
             justify-end
@@ -694,13 +674,13 @@ function Hero() {
           inset-x-0
           bottom-0
           z-[7]
-          h-[170px]
+          h-[110px]
           bg-gradient-to-t
           from-[#ead9c4]
-          via-[#ead9c4]/55
+          via-[#ead9c4]/45
           to-transparent
 
-          sm:h-[180px]
+          sm:h-[120px]
 
           md:hidden
         "
