@@ -9,12 +9,11 @@ function Hero() {
       id="home"
       className="
         relative
-        min-h-[820px]
+        min-h-[900px]
         overflow-hidden
         bg-[#ead9c4]
-        pt-[0px]
 
-        sm:min-h-[850px]
+        sm:min-h-[930px]
 
         md:min-h-[700px]
         md:pt-[78px]
@@ -99,13 +98,13 @@ function Hero() {
             absolute
             inset-x-0
             bottom-0
-            h-[300px]
+            h-[330px]
             bg-gradient-to-t
             from-[#ead9c4]
-            via-[#ead9c4]/80
+            via-[#ead9c4]/75
             to-transparent
 
-            sm:h-[270px]
+            sm:h-[300px]
 
             md:h-[180px]
 
@@ -116,6 +115,13 @@ function Hero() {
 
       {/* =========================================================
           JANINE HERO IMAGE
+
+          MOBILE:
+          - Centered
+          - Pulled upward closer to CTA
+          
+          DESKTOP:
+          - Original positioning preserved
       ========================================================= */}
 
       <div
@@ -125,12 +131,12 @@ function Hero() {
           bottom-0
           left-1/2
           z-[5]
-          h-[355px]
+          h-[500px]
           w-full
           -translate-x-1/2
           overflow-hidden
 
-          sm:h-[390px]
+          sm:h-[530px]
 
           md:left-0
           md:h-[500px]
@@ -150,13 +156,13 @@ function Hero() {
             bottom-0
             left-1/2
             h-auto
-            w-[325px]
+            w-[330px]
             max-w-none
             -translate-x-1/2
             object-contain
             object-bottom
 
-            sm:w-[375px]
+            sm:w-[365px]
 
             md:left-[-5%]
             md:w-[115%]
@@ -169,7 +175,7 @@ function Hero() {
           "
         />
 
-        {/* Image right-side blend */}
+        {/* Desktop image blend */}
         <div
           className="
             absolute
@@ -185,19 +191,19 @@ function Hero() {
           "
         />
 
-        {/* Image bottom blend */}
+        {/* Image bottom fade */}
         <div
           className="
             absolute
             inset-x-0
             bottom-0
-            h-[25%]
+            h-[24%]
             bg-gradient-to-t
             from-[#ead9c4]
-            via-[#ead9c4]/55
+            via-[#ead9c4]/50
             to-transparent
 
-            sm:h-[25%]
+            sm:h-[22%]
 
             md:h-[20%]
 
@@ -215,10 +221,10 @@ function Hero() {
           relative
           z-20
           mx-auto
-          min-h-[820px]
+          min-h-[900px]
           max-w-[1600px]
 
-          sm:min-h-[850px]
+          sm:min-h-[930px]
 
           md:min-h-[622px]
 
@@ -228,13 +234,13 @@ function Hero() {
         <div
           className="
             flex
-            min-h-[820px]
+            min-h-[900px]
             w-full
             items-start
             px-5
             pt-12
 
-            sm:min-h-[850px]
+            sm:min-h-[930px]
             sm:px-8
             sm:pt-14
 
@@ -263,7 +269,7 @@ function Hero() {
               className="
                 mb-5
                 flex
-                max-w-[340px]
+                max-w-[350px]
                 flex-wrap
                 items-center
                 gap-x-2
@@ -360,7 +366,7 @@ function Hero() {
             <p
               className="
                 mt-4
-                max-w-[340px]
+                max-w-[350px]
                 text-[14px]
                 leading-[1.55]
                 text-[#302a25]
@@ -479,8 +485,7 @@ function Hero() {
 
             {/* =================================================
                 DESKTOP QUOTE
-
-                UNCHANGED DESKTOP STRUCTURE
+                ORIGINAL DESKTOP LAYOUT
             ================================================= */}
 
             <div
@@ -563,8 +568,6 @@ function Hero() {
 
       {/* =========================================================
           TABLET QUOTE
-
-          UNCHANGED
       ========================================================= */}
 
       <div
@@ -615,35 +618,34 @@ function Hero() {
 
       {/* =========================================================
           MOBILE QUOTE
-
-          MOVED OUT OF THE BUTTON AREA
+          BOTTOM RIGHT
       ========================================================= */}
 
       <div
         className="
           absolute
-          right-5
-          top-[565px]
-          z-20
-          w-[205px]
+          bottom-[38px]
+          right-4
+          z-30
+          w-[185px]
+          text-right
 
-          sm:right-8
-          sm:top-[585px]
-          sm:w-[230px]
+          sm:bottom-[45px]
+          sm:right-6
+          sm:w-[220px]
 
           md:hidden
         "
       >
         <p
           className="
-            text-right
             font-serif
-            text-[15px]
+            text-[14px]
             italic
-            leading-[1.28]
+            leading-[1.25]
             text-[#28211c]
 
-            sm:text-[17px]
+            sm:text-[16px]
           "
         >
           "Knowledge brings forth truth,
@@ -692,13 +694,13 @@ function Hero() {
           inset-x-0
           bottom-0
           z-[7]
-          h-[150px]
+          h-[170px]
           bg-gradient-to-t
           from-[#ead9c4]
-          via-[#ead9c4]/60
+          via-[#ead9c4]/55
           to-transparent
 
-          sm:h-[150px]
+          sm:h-[180px]
 
           md:hidden
         "
