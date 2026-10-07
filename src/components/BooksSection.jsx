@@ -9,13 +9,13 @@ function BooksSection() {
       title: "McDermott Mysteries",
       subtitle: "The Secret Mountain",
       image: book1,
-      link: "#",
+      link: "https://www.amazon.com/McDermott-Mysteries-Zubock-Secret-Mountain-ebook/dp/B00B9HTE96/ref=sr_1_1?nsdOptOutParam=true&sr=8-1",
     },
     {
       title: "Achieving Self Mastery",
       subtitle: "Ultimate Guide",
       image: book2,
-      link: "#",
+      link: "https://www.amazon.com/Achieving-Self-Mastery-Janine-Ambrose-ebook/dp/B0053H8Y4Y/ref=sr_1_1?sr=8-1",
     },
   ];
 
